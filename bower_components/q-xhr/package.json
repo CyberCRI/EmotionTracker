@@ -1,0 +1,54 @@
+{
+  "name": "q-xhr",
+  "version": "0.1.3",
+  "description": "XMLHttpRequest (ajax) using powerful Q promises",
+  "author": "Nathan Black <nathan@nathanblack.org>",
+  "main": "q-xhr.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nathanboktae/q-xhr.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nathanboktae/q-xhr/issues"
+  },
+  "keywords": [
+    "q",
+    "xhr",
+    "ajax",
+    "promise",
+    "promises",
+    "deferred",
+    "xmlhttprequest"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "q": "latest",
+    "mocha": "~1.18.0",
+    "chai": "~1.8.1",
+    "chai-as-promised": "~4.1.0",
+    "sinon": "~1.7.3",
+    "sinon-chai": "~2.5.0",
+    "coffee-script": "~1.7.1",
+    "expect.js": "~0.3.1",
+    "es5-shim": "~2.3.0",
+    "grunt": "~0.4.2",
+    "grunt-cli": "~0.1.13",
+    "grunt-saucelabs": "latest",
+    "grunt-contrib-connect": "~0.7.1"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha -R spec && (grunt test || true)"
+  },
+  "testling": {
+    "harness": "mocha-bdd",
+    "files": "test/browser.tests.js",
+    "browsers": [
+      "ie/10",
+      "chrome/latest",
+      "firefox/latest",
+      "iphone/latest",
+      "ipad/latest",
+      "android-browser/latest"
+    ]
+  }
+}

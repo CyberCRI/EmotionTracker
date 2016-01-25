@@ -1,0 +1,115 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
+			
+body {
+	font-family: 'Lato';
+	margin: 0px auto;
+	max-width: 1150px;
+}
+
+#overlay {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	-o-transform : scaleX(-1);
+	-webkit-transform : scaleX(-1);
+	transform : scaleX(-1);
+	-ms-filter : fliph; /*IE*/
+	filter : fliph; /*IE*/
+
+	width : 200px;
+	height : 160px;
+}
+
+#videoel {
+	-o-transform : scaleX(-1);
+	-webkit-transform : scaleX(-1);
+	transform : scaleX(-1);
+	-ms-filter : fliph; /*IE*/
+	filter : fliph; /*IE*/
+
+	width : 200px;
+	height : 160px;
+}
+
+#container {
+	position : relative;
+	width : 200px;
+	margin: auto;
+	/*margin : 0px auto;*/
+}
+
+#content {
+	margin-top : 10px;
+	margin-left : auto;
+	margin-right : auto;
+	max-width: 300px;
+}
+
+#sketch, #filter {
+	display: none;
+}
+
+h2 {
+	font-weight : 400;
+}
+
+.btn {
+	font-family: 'Lato';
+	font-size: 16px;
+}
+
+#controls {
+	text-align : center;
+}
+
+#emotion_container {
+	width: 250px;
+	margin: auto;
+}
+
+#emotion_icons {
+	height: 60px;
+	width: 250px;
+}
+
+.emotion_icon {
+	width : 43px;
+	height : 60px;
+	margin-top: 5px;
+	/*margin-left : 13px;*/
+	margin-left : 15px;
+}
+
+#emotion_chart, #emotion_icons {
+	margin: 0 auto;
+	/*width : 180px;*/
+}
+
+#icon1, #icon2, #icon3, #icon4, #icon5, #icon6 {
+	visibility : hidden;
+}
+
+/* d3 */
+.bar {
+	fill : steelblue;
+	fill-opacity : .9;
+}
+
+h5 {
+	margin-left: 10px;
+}
+
+.emotion-graph {
+	display: inline-block;
+	width: 40px;
+	height: 60px;
+	color: green;
+}
+
+#nothing {
+
+}
+
+#something {
+	display: none;
+}

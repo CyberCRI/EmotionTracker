@@ -1,0 +1,35 @@
+{
+  "name": "RedMetrics.js",
+  "version": "0.0.3",
+  "authors": [
+    "Jesse Himmelstein <jesse@heavenstone.net>"
+  ],
+  "description": "JavaScript client for RedMetrics",
+  "moduleType": [
+    "amd",
+    "globals"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "bower_components",
+    "test*"
+  ],
+  "dependencies": {
+    "q-xhr": "~0.1.3",
+    "underscore": "~1.8.3"
+  },
+  "devDependencies": {
+    "jasmine": "~2.3.4"
+  },
+  "homepage": "https://github.com/CyberCRI/RedMetrics.js",
+  "_release": "0.0.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.0.3",
+    "commit": "36a42848986ba5e9bb877e41d876c6c9065fcd02"
+  },
+  "_source": "git://github.com/CyberCRI/RedMetrics.js.git",
+  "_target": "~0.0.3",
+  "_originalSource": "RedMetrics.js",
+  "_direct": true
+}
