@@ -1,0 +1,91 @@
+<html>
+<head>
+  <title>Emotion Tracker</title>
+  <meta name="description" content="Scrolling for single page websites.">
+  <meta name="keywords" content="jquery, javascript, scroll, to, single, multiple, page">
+ 
+  <!-- Libraries -->
+  <script type="text/JavaScript" src="js/jquery.min.js"></script>
+
+  <!-- Template Files -->
+  <link rel="stylesheet" type="text/css" href="template/stylesheets/reset.css">
+  <link rel="stylesheet" type="text/css" href="template/stylesheets/template.css">
+  <script type="text/JavaScript" src="template/javascripts/template.js"></script>
+
+  <!-- SnapScroll Core Files -->
+  <script type="text/JavaScript" src="js/jquery.scroll_to.js"></script>
+  <script type="text/JavaScript" src="js/jquery.snapscroll.js"></script>
+
+  <!-- Demo Files -->
+  <link rel="stylesheet" type="text/css" href="assets/stylesheets/demo.css">
+  <script type="text/JavaScript" src="assets/javascripts/demo.js"></script>
+</head>
+<body>
+
+  <div class="panel">
+    <iframe id="emotiontracker" src="app.html"></iframe>
+  </div>
+  <a href="javascript:void(0);" class="slider-arrow show">&raquo;</a>
+  <script type="text/javascript">
+    var tempIframe = document.getElementById("emotiontracker");
+    var iframeContent = tempIframe.contentWindow;
+  </script>
+
+  <header>
+    <h1>Emotion Tracker</h1>
+    <div class="hr"></div>
+  </header>
+
+  <ul class="content">
+    <li class="third">
+      <h1>First Page</h1>
+      <br>
+      <iframe width="560" style="display:block;margin: auto;" height="315" src="https://www.youtube.com/embed/fkNUF4zCCeo" frameborder="0" allowfullscreen></iframe>
+    </li>
+    <li class="second">
+      <h1>Second Page</h1>
+    </li>
+    <li class="first">
+      <h1>Third Page</h1>
+    </li>
+    <li class="second">
+      <h1>Fourth Page</h1>
+    </li>
+    <li class="third">
+      <h1>Fifth Page</h1>
+    </li>
+  </ul>
+
+  <footer>
+
+  </footer>
+
+  <div class="scroller" data-url="http://www.google.com">
+    <h3>Scroll to continue to next page</h3>
+  </div>
+  <script type="text/javascript">
+    // Function for animate the sliding panel
+    $(function(){
+      $('.slider-arrow').click(function(){
+            if($(this).hasClass('show')){
+          $( ".slider-arrow, .panel" ).animate({
+              left: "+=290"
+          }, 500, function() {
+                // Animation complete.
+              });
+          $(this).html('&laquo;').removeClass('show').addClass('hide');
+            }
+            else {    
+          $( ".slider-arrow, .panel" ).animate({
+              left: "-=290"
+          }, 500, function() {
+                // Animation complete.
+              });
+          $(this).html('&raquo;').removeClass('hide').addClass('show');    
+            }
+        });
+
+    });
+  </script>
+</body>
+</html>
